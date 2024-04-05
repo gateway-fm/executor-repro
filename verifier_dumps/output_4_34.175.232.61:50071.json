@@ -1,0 +1,80 @@
+{
+  "new_state_root": "ge5hCzB/2nP9PxKd7TBUBmDTgPKz6C7tD0zgDcfcJms=",
+  "new_acc_input_hash": "CzmnFPQmXk8ts7QVaIbraleHMisunyWSk+E4IXeLUso=",
+  "new_local_exit_root": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+  "cnt_keccak_hashes": 6,
+  "cnt_poseidon_hashes": 442,
+  "cnt_poseidon_paddings": 3,
+  "cnt_arithmetics": 479,
+  "cnt_binaries": 653,
+  "cnt_steps": 6633,
+  "block_responses": [
+    {
+      "parent_hash": "uolsrHNpgInXBWeaLnx3/rk2BpkUwje8B9LkNp79Rgk=",
+      "coinbase": "0xfa3b44587990f97ba8b6ba7e230a5f0e95d14b3d",
+      "gas_limit": 1125899906842624,
+      "block_number": 4,
+      "timestamp": 1712252995,
+      "ger": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+      "block_hash_l1": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+      "gas_used": 21000,
+      "block_info_root": "gcDTvBkcUZWGQkwHmoIywIiuqu1EHbDN5htWxj3Hp3U=",
+      "block_hash": "ge5hCzB/2nP9PxKd7TBUBmDTgPKz6C7tD0zgDcfcJms=",
+      "responses": [
+        {
+          "tx_hash": "uXuxAbEhur7nZ0p4y/PdXY0ub7V7p7e7axLGUXoJ0WI=",
+          "tx_hash_l2": "N3ge07WjGRIr92JffDxFSkqDu6ikhoNRVYh6L1ubdXk=",
+          "rlp_tx": "+GgEhDuaygCCUgiU760gFlmbiGpFf/vzE9rip6S/qieCJxCAgx6EoaCra/yCrsRM4XkuzVaKOk945mH9JKqzGeiUGJa47otcRqAGjNAcCohyI/Zzue2esS//jQ+MsWpmpEO8eRdTeb3KWA==",
+          "gas_used": 21000,
+          "cumulative_gas_used": 21000,
+          "error": 1,
+          "state_root": "pRXYJ1iRbr513tlAXfqnVyJxVBJLNAvotOPBIj5mJA4=",
+          "effective_gas_price": "0x3b9aca00",
+          "effective_percentage": 255,
+          "status": 1
+        }
+      ],
+      "error": 1
+    }
+  ],
+  "error": 1,
+  "read_write_addresses": {
+    "0x000000000000000000000000000000005ca1ab1e": {
+      "sc_storage": {
+        "0": "4",
+        "2": "660ee843",
+        "3": "81c0d3bc191c519586424c079a8232c088aeaaed441db0cde61b56c63dc7a775",
+        "7dfe757ecd65cbd7922a9c0161e935dd7fdbcc0e999689c7d31633896b1fc60b": "ba896cac73698089d705679a2e7c77feb936069914c237bc07d2e4369efd4609"
+      }
+    },
+    "0x67b1d87101671b127f5f8714789c7192f7ad340e": {
+      "nonce": "5",
+      "balance": "9999999894999999950000",
+      "sc_length": "0"
+    },
+    "0xa40d5f56745a118d0906a34e69aec8c0db1cb8fa": {
+      "sc_storage": {
+        "1": "0"
+      }
+    },
+    "0xefad2016599b886a457ffbf313dae2a7a4bfaa27": {
+      "balance": "50000",
+      "sc_length": "0"
+    },
+    "0xfa3b44587990f97ba8b6ba7e230a5f0e95d14b3d": {
+      "balance": "105000000000000"
+    }
+  },
+  "flush_id": 310,
+  "prover_id": "141c1ec0-d7d7-461b-856c-dd53f76141ff",
+  "gas_used": 21000,
+  "fork_id": 8,
+  "error_rom": 1,
+  "cnt_reserve_keccak_hashes": 6,
+  "cnt_reserve_poseidon_hashes": 3702,
+  "cnt_reserve_poseidon_paddings": 3,
+  "cnt_reserve_arithmetics": 1118,
+  "cnt_reserve_binaries": 711,
+  "cnt_reserve_steps": 106188,
+  "old_state_root": "uolsrHNpgInXBWeaLnx3/rk2BpkUwje8B9LkNp79Rgk="
+}
