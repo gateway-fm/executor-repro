@@ -35,7 +35,14 @@ func main() {
 	executorUrls := []string{
 		"34.175.105.40:50071",
 		"34.175.232.61:50071",
+		"34.175.237.160:50071",
+		"34.175.42.120:50071",
+		"34.175.236.212:50071",
+		"34.175.167.26:50071",
+		"51.210.116.237:50071",
+		//"34.175.73.226:50071", - currently down
 	}
+
 	executors := make([]*Executor, len(executorUrls))
 	for i, url := range executorUrls {
 		executors[i], err = NewExecutor(url, 5000*time.Millisecond)
@@ -65,7 +72,7 @@ func main() {
 			}
 
 			responseJson, _ := json.MarshalIndent(resp, "", "  ")
-			outFile := fmt.Sprintf("%s/output_%s_%s.json", dumpDir, extractBatchNumberString(fileInfo.Name()), e.grpcUrl)
+			outFile := fmt.Sprintf("%s/output_%s_%s.json", "output", extractBatchNumberString(fileInfo.Name()), e.grpcUrl)
 			if err := os.WriteFile(outFile, []byte(responseJson), 0644); err != nil {
 				fmt.Printf("Failed to write response to file: %v\n", err)
 			}
