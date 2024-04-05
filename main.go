@@ -68,7 +68,6 @@ func main() {
 			_, resp, err := e.VerifyTest(payload, request)
 			if err != nil {
 				fmt.Printf("%s: Error verifying payload %s: %v\n", e.grpcUrl, payloadPath, err)
-				continue
 			}
 
 			responseJson, _ := json.MarshalIndent(resp, "", "  ")
