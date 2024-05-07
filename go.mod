@@ -3,7 +3,7 @@ module repro
 go 1.20
 
 require (
-	github.com/ethereum/go-ethereum v1.13.14
+	github.com/ethereum/go-ethereum v1.13.15
 	github.com/google/go-cmp v0.6.0
 	github.com/ledgerwatch/log/v3 v3.9.0
 	google.golang.org/grpc v1.63.0
