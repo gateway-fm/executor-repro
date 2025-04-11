@@ -129,6 +129,10 @@ func responsesAreEqual(t *testing.T, resp1, resp2 *executor.ProcessBatchResponse
 }
 
 func loadPayloadandRequest(filePath string) (*Payload, *VerifierRequest, error) {
+	if strings.Contains(filePath, "../") || strings.Contains(filePath, "..\\") {
+		return nil, nil, fmt.Errorf("invalid file path: %s", filePath)
+	}
+
 	payloadData, err := os.ReadFile(filePath)
 	if err != nil {
 		return nil, nil, fmt.Errorf("failed to read file: %w", err)
@@ -138,7 +142,12 @@ func loadPayloadandRequest(filePath string) (*Payload, *VerifierRequest, error) 
 		return nil, nil, fmt.Errorf("failed to unmarshal payload: %w", err)
 	}
 
-	requestData, err := os.ReadFile(strings.Replace(filePath, "-payload.json", "-request.json", 1))
+	requestFilePth := strings.Replace(filePath, "-payload.json", "-request.json", 1)
+	if strings.Contains(requestFilePth, "../") || strings.Contains(requestFilePth, "..\\") {
+		return nil, nil, fmt.Errorf("invalid file path: %s", requestFilePth)
+	}
+
+	requestData, err := os.ReadFile(requestFilePth)
 	if err != nil {
 		return nil, nil, fmt.Errorf("failed to read file: %w", err)
 	}
