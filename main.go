@@ -133,7 +133,7 @@ func loadPayloadandRequest(filePath string) (*Payload, *VerifierRequest, error) 
 		return nil, nil, fmt.Errorf("invalid file path: %s", filePath)
 	}
 
-	payloadData, err := os.ReadFile(filePath)
+	payloadData, err := os.ReadFile(filepath.Clean(filePath))
 	if err != nil {
 		return nil, nil, fmt.Errorf("failed to read file: %w", err)
 	}
@@ -147,7 +147,7 @@ func loadPayloadandRequest(filePath string) (*Payload, *VerifierRequest, error) 
 		return nil, nil, fmt.Errorf("invalid file path: %s", requestFilePth)
 	}
 
-	requestData, err := os.ReadFile(requestFilePth)
+	requestData, err := os.ReadFile(filepath.Clean(requestFilePth))
 	if err != nil {
 		return nil, nil, fmt.Errorf("failed to read file: %w", err)
 	}
